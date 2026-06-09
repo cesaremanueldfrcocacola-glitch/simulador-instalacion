@@ -39,7 +39,6 @@ scene.background=new THREE.Color(0x050b12);
 
 const camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
 camera.position.set(10,6,12);
-
 const renderer=new THREE.WebGLRenderer({antialias:true});
 
 alert("THREE cargado correctamente");
@@ -47,6 +46,7 @@ console.log("THREE cargado correctamente");
 
 renderer.setSize(innerWidth,innerHeight);
 document.body.appendChild(renderer.domElement);
+
 
 const controls=new OrbitControls(camera,renderer.domElement);
 controls.enableDamping=true;
